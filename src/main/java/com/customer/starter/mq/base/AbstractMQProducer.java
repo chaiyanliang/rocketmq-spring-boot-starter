@@ -42,6 +42,21 @@ public abstract class AbstractMQProducer {
         }
     }
 
+    public SendResult msgSend(Message message)  {
+        SendResult sendResult = null;
+        try {
+            sendResult = producer.send(message);
+            log.debug("send rocketmq message ,messageId : {}", sendResult.getMsgId());
+            //this.doAfterSyncSend(message, sendResult);
+            return sendResult;
+        } catch (Exception e) {
+            log.error("消息发送失败，topic : {}, msgObj {}", message.getTopic(), message);
+           // throw new MQException("消息发送失败，topic :" + message.getTopic() + ",e:" + e.getMessage());
+            return sendResult;
+        }
+
+    }
+
 
     /**
      * 同步发送消息
