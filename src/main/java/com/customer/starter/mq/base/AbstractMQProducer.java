@@ -42,6 +42,11 @@ public abstract class AbstractMQProducer {
         }
     }
 
+    /**
+     * 同步发送消息
+     * @param message 消息体
+     * @return
+     */
     public SendResult msgSend(Message message)  {
         SendResult sendResult = null;
         try {
