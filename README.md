@@ -29,9 +29,9 @@
 
 ```java
 <dependency>
-    <groupId>com.maihaoche</groupId>
-    <artifactId>spring-boot-starter-rocketmq</artifactId>
-    <version>0.0.7</version>
+    <groupId>com.customer</groupId>
+        <artifactId>spring-boot-starter-rocketmq</artifactId>
+        <version>0.0.1</version>
 </dependency>
 ```
 
