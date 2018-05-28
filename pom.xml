@@ -31,10 +31,9 @@
     </licenses>
 
 
-    <groupId>com.maihaoche</groupId>
+    <groupId>com.customer</groupId>
     <artifactId>spring-boot-starter-rocketmq</artifactId>
     <version>0.0.1</version>
-
     <scm>
         <url>https://github.com/chaiyanliang/rocketmq-spring-boot-starter</url>
         <connection>scm:git:git://github.com/chaiyanliang/rocketmq-spring-boot-starter.git</connection>
